@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import './Hal_mahasiswa.dart' as mahasiswa;
 import './Hal_dosen.dart' as dosen;
 import './Hal_ukm.dart' as ukm;
+import './Hal_belajar.dart' as belajar;
 
 void main() {
   runApp(new MaterialApp(
@@ -20,7 +21,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   TabController controller;
   @override
   void initState() {
-    controller = new TabController(vsync: this, length: 3);
+    controller = new TabController(vsync: this, length: 4);
     super.initState();
   }
 
@@ -51,6 +52,10 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
               icon: new Icon(Icons.beach_access),
               text: "UKM",
             ),
+            new Tab(
+              icon: new Icon(Icons.book_online_outlined),
+              text: "Belajar",
+            ),
           ],
         ),
       ),
@@ -60,6 +65,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           new mahasiswa.Mahasiswa(),
           new dosen.Dosen(),
           new ukm.UKM(),
+          new belajar.Belajar(),
         ],
       ),
       // bottomNavigationBar: new Material(

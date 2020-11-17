@@ -48,6 +48,10 @@ flutter:
   - img/dosen.JPG
   - img/mahasiswa.jpg
   - img/musik.jpg
+  - img/dana.JPG
+  - img/rspct1.jpg
+  - img/rspct2.jpg
+  - img/rspct3.jpg
 
   # To add assets to your application, add an assets section, like this:
   # assets:
