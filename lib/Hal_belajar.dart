@@ -9,18 +9,22 @@ class Belajar extends StatelessWidget {
           new Listutorial(
             gambar: "img/dosen.JPG",
             judul: "Miftahul Firdaus",
+            penjelasanjudul: "Pak Polisi",
           ),
           new Listutorial(
             gambar: "img/dana.JPG",
             judul: "Ramadana Pratama",
+            penjelasanjudul: "Trabasher",
           ),
           new Listutorial(
             gambar: "img/rspct1.jpg",
-            judul: "Cara Buka Puasa Bersama",
+            judul: "Acara Buka Puasa Bersama",
+            penjelasanjudul: "Kenangan",
           ),
           new Listutorial(
             gambar: "img/rspct3.jpg",
             judul: "Ekskul Pramuka MAN 2 Mataram",
+            penjelasanjudul: "Kenangan",
           )
         ],
       ),
@@ -29,9 +33,10 @@ class Belajar extends StatelessWidget {
 }
 
 class Listutorial extends StatelessWidget {
-  Listutorial({this.gambar, this.judul});
+  Listutorial({this.gambar, this.judul, this.penjelasanjudul});
   final String gambar;
   final String judul;
+  final String penjelasanjudul;
 
   @override
   Widget build(BuildContext context) {
@@ -40,8 +45,9 @@ class Listutorial extends StatelessWidget {
       child: new Center(
         child: new Column(
           children: <Widget>[
-            new Image.asset(gambar, width: 250.0),
+            new Image.asset(gambar, width: 300.0),
             new Container(
+              padding: new EdgeInsets.all(10.0),
               child: new Center(
                   child: new Column(
                 children: <Widget>[
@@ -50,8 +56,8 @@ class Listutorial extends StatelessWidget {
                     style: new TextStyle(fontSize: 20.0),
                   ),
                   new Text(
-                    "Penjelasan Judul",
-                    style: new TextStyle(fontSize: 10.0),
+                    penjelasanjudul,
+                    style: new TextStyle(fontSize: 15.0),
                   )
                 ],
               )),

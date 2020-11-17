@@ -36,25 +36,25 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
     return Scaffold(
       appBar: new AppBar(
         backgroundColor: Colors.blue,
-        title: new Text("Universitas Bumigora"),
+        title: new Text("MCN Official"),
         bottom: new TabBar(
           controller: controller,
           tabs: <Widget>[
             new Tab(
               icon: new Icon(Icons.phone_android),
-              text: "Mahasiswa",
+              text: "Pemilik",
             ),
             new Tab(
               icon: new Icon(Icons.book),
-              text: "Dosen",
+              text: "Pelanggan",
             ),
             new Tab(
               icon: new Icon(Icons.beach_access),
-              text: "UKM",
+              text: "Buku Hutang",
             ),
             new Tab(
               icon: new Icon(Icons.book_online_outlined),
-              text: "Belajar",
+              text: "Profesi",
             ),
           ],
         ),
@@ -66,6 +66,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           new dosen.Dosen(),
           new ukm.UKM(),
           new belajar.Belajar(),
+          // new haldua.HalDua(),
         ],
       ),
       // bottomNavigationBar: new Material(
