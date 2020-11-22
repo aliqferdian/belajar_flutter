@@ -45,12 +45,12 @@ flutter:
   uses-material-design: true
 
   assets : 
-  - img/dosen.JPG
-  - img/mahasiswa.jpg
-  - img/musik.jpg
-  - img/dana.JPG
-  - img/rspct1.jpg
-  - img/rspct3.jpg
+  - img/a/dosen.JPG
+  - img/a/mahasiswa.jpg
+  - img/a/musik.jpg
+  - img/a/dana.JPG
+  - img/a/rspct1.jpg
+  - img/a/rspct3.jpg
   - img/ann.jpg
   - img/kurakura.jpg
   - img/kuta.jpg
